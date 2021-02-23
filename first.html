@@ -1,19 +1,27 @@
 <html>
+    <head>
+        <script>
+            function add() {
+            var a,b,c;
+            a = Number(document.getElementById('first').value);
+            b = Number(document.getElementById('second').value);
+            c = a + b;
+            document.getElementById("sum").value = c;
+            }
+            </script>
+    </head>
     <body>
-        <h1> My first JS Program</h1>
-        <button type="button" onclick="document.getElementById('demo')
-        .innerHTML = Date()">Click here to show time and date</button>
-        <p id='demo'></p>
+        Enter the first number: <input id ="myInput" ></br>
+        Enter the second number: <input id="myInput"></br>
+        <button onclick="add()">add</button></br>
+        <input id="sum">  
 
-        <div>
-            <button onclick="document.getElementById('light')
-            .src='pic_bulb_on'">Turn on Light</button>
+        <p>Clear the input field when you click on the button:</p>
+        <button onclick="document.getElementById('myInput').value = ''">
+        Clear input field</button>
+
+        
+
             
-            <img id="light" src="pic_bulboff.gif" style="width:200px">
-              
-            <button onclick="document.getElementById('light')
-            .src='pic_bulboff'">Turn off light</button>
-
-        </div>
     </body>
 </html>
