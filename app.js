@@ -1,25 +1,20 @@
 console.log('hi');
-let n;
-let b;
-let c;
-let l;
-function list(a) {
-    
-    n = a.length;
-    if (n===0){
-        return '';
+function median(a) {
+    let m;
+    let f,g;
+    let n = a.length;
+    if (n % 2 == 0) {
+        f = a[(n/2)-1];
+        g = a[(n/2)];
+        m = (f+g)/2;
+        console.log(m);
     }
-    else if (n===1){
-        return a[0];
+    else {
+        m = a[Math.floor(n / 2)];
+        console.log(m)
     }
-    else{
-    b = a.slice(0,n-1);
-    l = a[n-1];
-    c = b.join();
-    console.log(b + ' and ' + l);
-}
 }
 
+median([1, 2, 10, 100]);
 
 
-   list(['Huey', 'Dewey', 'Louie']);
