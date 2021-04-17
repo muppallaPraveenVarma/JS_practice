@@ -1,16 +1,25 @@
 console.log('hi');
-function halve(a) {
-    let n = a.length;
-    if (n%2==0) {
-        let c = a.slice(0,n/2);
-        console.log(c);
+let n;
+let b;
+let c;
+let l;
+function list(a) {
+    
+    n = a.length;
+    if (n===0){
+        return '';
     }
-    else {
-        let c = a.slice(0,((n/2)+1))
-        console.log(c);
-        }
+    else if (n===1){
+        return a[0];
     }
+    else{
+    b = a.slice(0,n-1);
+    l = a[n-1];
+    c = b.join();
+    console.log(b + ' and ' + l);
+}
+}
 
 
 
-   halve([3,5,0,3,4]);
+   list(['Huey', 'Dewey', 'Louie']);
