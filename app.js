@@ -1,12 +1,13 @@
 console.log('Hi');
-let i, sum;
-function factorial(n){
-    sum = 1
-    for (i=n;i>0;i--){
-        sum = sum * i;
-        
+let i,m,sum=0;
+function mean(a){
+    for (i=0;i<a.length;i++){
+        sum = sum + a[i];
+             
     }
-    console.log(sum);
+    
+    console.log(sum/a.length);
 }
 
-factorial(5);
+
+mean([1, 2, 3]);
