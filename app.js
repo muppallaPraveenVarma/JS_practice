@@ -1,12 +1,12 @@
 console.log('Hi');
 let i, sum;
-function addTo(n){
-    sum = 0
-    for (i=n;i>=0;i--){
-        sum = sum + i;
+function factorial(n){
+    sum = 1
+    for (i=n;i>0;i--){
+        sum = sum * i;
         
     }
-    return sum;
+    console.log(sum);
 }
 
-addTo(4);
+factorial(5);
