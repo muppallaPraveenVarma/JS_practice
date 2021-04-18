@@ -1,14 +1,12 @@
-console.log('hi');
-let n;
-function hello(n) {
- if (n===undefined){
- console.log('Hello world!');
- } 
- else{
- console.log( 'Hello ' + n + '!');
- }
+console.log('Hi');
+let i, sum;
+function addTo(n){
+    sum = 0
+    for (i=n;i>=0;i--){
+        sum = sum + i;
+        
+    }
+    return sum;
 }
 
-hello('nj');
-
-
+addTo(4);
