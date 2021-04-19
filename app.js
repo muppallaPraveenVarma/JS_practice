@@ -1,15 +1,11 @@
 console.log('Hi');
-function cutComment(a) {
- 
-    if (!a.includes('//')){
-    console.log(null);
+function spaces(n) {
+    let x =' ';
+     if (n===0){
+     console.log('');
+     }
+     else{
+     console.log(x.repeat(n)); 
+     }
     }
-    else { 
-    let n = a.indexOf('/');
-    let g = a.length;
-    let c = a.substr (n+3,g);
-    console.log(c);
-    }
-   }
-
-cutComment('let foo; // bar');
+spaces(45);
