@@ -1,13 +1,15 @@
 console.log('Hi');
-let i,m,sum=0;
-function mean(a){
-    for (i=0;i<a.length;i++){
-        sum = sum + a[i];
-             
+function cutComment(a) {
+ 
+    if (!a.includes('//')){
+    console.log(null);
     }
-    
-    console.log(sum/a.length);
-}
+    else { 
+    let n = a.indexOf('/');
+    let g = a.length;
+    let c = a.substr (n+3,g);
+    console.log(c);
+    }
+   }
 
-
-mean([1, 2, 3]);
+cutComment('let foo; // bar');
