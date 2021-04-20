@@ -1,11 +1,13 @@
 console.log('Hi');
-function spaces(n) {
-    let x =' ';
-     if (n===0){
-     console.log('');
-     }
-     else{
-     console.log(x.repeat(n)); 
-     }
+function lcm (n1,n2) {
+    let m;
+    m = Math.max(n1,n2);
+    while(true){
+    if ( m % n1 === 0  && m % n2 === 0){
+    console.log(m);
+    break;
     }
-spaces(45);
+    m ++; 
+   }
+}
+ lcm(3,4)
